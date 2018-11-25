@@ -1,0 +1,205 @@
+{% extends 'base.html' %}
+
+{% block customcss %}
+    <style>
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("/static/img/sayhellotonz.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.jumbotron {
+    margin-bottom: 0;
+    background-color: white;
+}
+
+    #ramadared {
+        color: var(--ramadared);
+        text-align: center;
+        font-family: Gotham;
+    }
+    #ramadagrey {
+        color: var(--ramadagray);
+        text-align: center;
+        font-family: Gotham;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+
+    <div class="bg"></div>
+
+    <main role="main">
+
+    <section class="jumbotron text-center">
+        <div class="container">
+            <h1 class="jumbotron-heading" id="ramadared">Ramada New Zealand</h1>
+            <p id="ramadagrey">
+                Home to some of the most varied and rugged landscapes on earth,
+                New Zealand is famous for adrenaline-pumping adventures and
+                breathtaking scenery. Get your heart racing with a diverse
+                range of extreme sports or slow down and lose yourself in the
+                stunning surrounds
+            </p>
+        </div>
+    </section>
+
+        <div class="album py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4" onclick="location.href='/auckland';">
+{#                        Auckland#}
+                        <div class="card mb-4 shadow-sm">
+                            <img class="card-img-top"
+                                 src="/static/img/ramaAuckland.png"
+                                 alt="Ramada Federal Street">
+                            <div class="card-body">
+                                <h3 id="ramadared">Auckland</h3>
+                                <p class="card-text" id="ramadagrey">
+                                    Ramada Auckland is located at 219 Federal
+                                    Street in the CBD and is one of the newest
+                                    hotels in Auckland Central. Just a few
+                                    minutes walk from key attractions
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+{#                    Christchurch#}
+                    <div class="col-md-4" onclick="location.href='http://www.ramadachristchurch.co.nz';">
+                        <div class="card mb-4 shadow-sm">
+                            <img class="card-img-top"
+                                 src="/static/img/ramaChch.jpg"
+                                 alt="Ramada Christchurch">
+                            <div class="card-body">
+                                <h3 id="ramadared">Christchurch</h3>
+                                <p class="card-text" id="ramadagrey">
+                                    Ramada Christchurch is excited to offer
+                                    apartment-style rooms, all of which contain
+                                    a full kitchen with high-spec amenities and
+                                    appliances plus a full laundry.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+{#                    Queenstown#}
+                    <div class="col-md-4" onclick="location.href='http://www.ramadaqueenstown.co.nz';">
+                        <div class="card mb-4 shadow-sm">
+                            <img class="card-img-top"
+                                 src="/static/img/ramaQueenstown.png"
+                                 alt="Ramada Queenstown">
+                            <div class="card-body">
+                                <h3 id="ramadared">Queenstown</h3>
+                                <p class="card-text" id="ramadagrey">
+                                    Located just two minutes drive from
+                                    Queenstown Airport and only seven minutes
+                                    from the central city, Ramada Remarkables
+                                    is the first hotel in the region situated
+                                    with easy access to the airport.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+{#                    Albany#}
+                    <div class="col-md-4" onclick="location.href='http://www.ramadaauckland.co.nz';">
+                        <div class="card mb-4 shadow-sm">
+                            <img class="card-img-top"
+                            src="/static/img/ramaAlbany.jpg"
+                            alt="Ramada Albany">
+                            <div class="card-body">
+                                <h3 id="ramadared">Albany</h3>
+                                <p class="card-text" id="ramadagrey">
+                                    Ramada Albany is located on Auckland's
+                                    North Shore, conveniently linked by motorway
+                                    to the CBD and the rest of the Auckland
+                                    region
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+{#                    Orewa#}
+                    <div class="col-md-4" onclick="location.href='http://www.ramadaauckland.co.nz';">
+                        <div class="card mb-4 shadow-sm">
+                            <img class="card-img-top"
+                            src="/static/img/ramaOrewa.jpg"
+                            alt="Ramada Orewa">
+                            <div class="card-body">
+                                <h3 id="ramadared">Orewa</h3>
+                                <p class="card-text" id="ramadagrey">
+                                    Come out of your shell and reward yourself
+                                    at Ramada Suites Nautilus Orewa, spacious
+                                    apartments, luxury accommodation, for an
+                                    instant escape from Auckland city or
+                                    sustained change of pace
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+{#                    Taipa#}
+                    <div class="col-md-4" onclick="location.href='http://www.ramadaauckland.co.nz';">
+                        <div class="card mb-4 shadow-sm">
+                            <img class="card-img-top"
+                            src="/static/img/ramaTaipa.jpg"
+                            alt="Ramada Taipa">
+                            <div class="card-body">
+                                <h3 id="ramadared">Taipa</h3>
+                                <p class="card-text" id="ramadagrey">
+                                    Ramad Resort Reia Taipa Beach, situated in
+                                    the heart of Doubtless Bay has a stunning
+                                    beachfront location and is a popular base
+                                    along the 'Twin Coast Discovery' to explore
+                                    New Zealand's unspoiled subtropical
+                                    Northland region
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+{#                    Rotorua#}
+                    <div class="col-md-4" onclick="location.href='http://www.ramadaauckland.co.nz';">
+                        <div class="card mb-4 shadow-sm">
+                            <img class="card-img-top"
+                            src="/static/img/ramaRotorua.jpg">
+                            <div class="card-body">
+                                <h3 id="ramadared">Rotorua</h3>
+                                <p class="card-text" id="ramadagrey">
+                                    Ramada Rotorua is conveniently positioned
+                                    approximately three hours from Auckland and
+                                    the famous Mt Ruapehu ski fields
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+{#                    Wanaka#}
+                    <div class="col-md-4" onclick="location.href='http://www.ramadaauckland.co.nz';">
+                        <div class="card mb-4 shadow-sm">
+                            <img class="card-img-top"
+                            src="/static/img/ramaWanaka.jpg">
+                            <div class="card-body">
+                                <h3 id="ramadared">Wanaka</h3>
+                                <p class="card-text" id="ramadagrey">
+                                    Located in the heart of New Zealand's
+                                    Southern Alps, minutes away from the shores
+                                    of Lake Wanaka
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+{% endblock %}
