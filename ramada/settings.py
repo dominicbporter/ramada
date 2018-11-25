@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
-import os, django_heroku
+import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import dj_database_url
@@ -27,7 +27,7 @@ SECRET_KEY = 'b0p&a1f@nyi-5m+z$8+xt(t_c$pq%6)k%s6rcipc1+8d1pb!@)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', os.environ.get('HOSTNAME', '')]
+ALLOWED_HOSTS = ['ramada-web.herokuapp.com', 'ramada.dbp.kiwi', '127.0.0.1', 'localhost', os.environ.get('HOSTNAME', '')]
 
 
 # Application definition
@@ -135,5 +135,3 @@ STATICFILES_DIRS = (
     # static file location relative to settings.py
     os.path.abspath(os.path.join(os.path.dirname( __file__ ), '..', 'static')),
 )
-
-django_heroku.settings(locals())
