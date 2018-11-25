@@ -26,6 +26,26 @@
             font-weight: 700;
             font-style: normal;
         }
+
+        .nav-link{
+            color: var(--ramadared);
+            text-align: center;
+            font-family: Gotham;
+        }
+
+        #ramadared{
+            color: var(--ramadared);
+            text-align: center;
+            font-family: Gotham;
+        }
+        #ramadagrey{
+            color: var(--ramadagray);
+            text-align: center;
+            font-family: Gotham;
+        }
+        html{
+            padding: 2rem;
+        }
     </style>
 
     <!-- Custom styles for this template -->
@@ -35,26 +55,37 @@
  <body>
 
     <nav class="navbar navbar-expand-md" style="background-color: white;">
-      <a class="navbar-brand" href="#">Plant A Tree</a>
+      <a class="navbar-brand" href="/">
+          <img src="/static/img/logo.jpg" alt="Ramada" style="height: 25%; width: 25%">
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="{% url 'web:index' %}">Home <span class="sr-only"></span></a>
+            <a class="nav-link" href="{% url 'web:auckland' %}">Auckland<span class="sr-only"></span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'web:index' %}">Trees</a>
+            <a class="nav-link" href="{% url 'web:christchurch' %}">Christchurch</a>
           </li>
             <li class="nav-item">
-            <a class="nav-link" href="{% url 'web:index' %}">Products</a>
+            <a class="nav-link" href="{% url 'web:queenstown' %}">Queenstown</a>
           </li>
             <li class="nav-item">
-            <a class="nav-link" href="{% url 'web:index' %}">Wishlist</a>
+            <a class="nav-link" href="{% url 'web:albany' %}">Albany</a>
           </li>
             <li class="nav-item">
-            <a class="nav-link" href="{% url 'web:index' %}">Cart</a>
+            <a class="nav-link" href="{% url 'web:orewa' %}">Orewa</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="{% url 'web:taipa' %}">Taipa</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="{% url 'web:rotorua' %}">Rotorua</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="{% url 'web:wanaka' %}">Wanaka</a>
           </li>
         </ul>
       </div>
