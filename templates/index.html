@@ -7,40 +7,34 @@ body, html {
     margin: 0;
 }
 
-.bg {
-    /* The image used */
-    background-image: url("/static/img/sayhellotonz.jpg");
-
-    /* Full height */
-    height: 100%;
-
-    /* Center and scale the image nicely */
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
 .jumbotron {
     margin-bottom: 0;
     background-color: white;
 }
 
-    #ramadared {
-        color: var(--ramadared);
-        text-align: center;
-        font-family: Gotham;
-    }
-    #ramadagrey {
-        color: var(--ramadagray);
-        text-align: center;
-        font-family: Gotham;
-    }
+#ramadared {
+    color: var(--ramadared);
+    text-align: center;
+    font-family: Gotham;
+}
+#ramadagrey {
+    color: var(--ramadagray);
+    text-align: center;
+    font-family: Gotham;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 </style>
 {% endblock %}
 
 {% block content %}
 
-    <div class="bg"></div>
+    <img src="/static/img/sayhellotonz.jpg" alt="Say Hello to New Zealand">
 
     <main role="main">
 
