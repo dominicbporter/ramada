@@ -29,6 +29,10 @@ img {
     height: auto;
 }
 
+.nounderline{
+    text-decoration: none !important;
+}
+
 </style>
 {% endblock %}
 
@@ -54,8 +58,8 @@ img {
         <div class="album py-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4" onclick="location.href='/auckland';">
-{#                        Auckland#}
+                    <div class="col-md-4">
+                        <a href="{% url 'web:auckland' %}" class="nounderline">
                         <div class="card mb-4 shadow-sm">
                             <img class="card-img-top"
                                  src="/static/img/ramaAuckland.png"
@@ -70,9 +74,11 @@ img {
                                 </p>
                             </div>
                         </div>
+                            </a>
                     </div>
 {#                    Christchurch#}
-                    <div class="col-md-4" onclick="location.href='http://www.ramadachristchurch.co.nz';">
+                    <div class="col-md-4">
+                        <a href="{% url 'web:christchurch' %}" class="nounderline">
                         <div class="card mb-4 shadow-sm">
                             <img class="card-img-top"
                                  src="/static/img/ramaChch.jpg"
@@ -87,9 +93,11 @@ img {
                                 </p>
                             </div>
                         </div>
+                            </a>
                     </div>
 {#                    Queenstown#}
-                    <div class="col-md-4" onclick="location.href='http://www.ramadaqueenstown.co.nz';">
+                    <div class="col-md-4">
+                        <a href="{% url 'web:queenstown' %}" class="nounderline">
                         <div class="card mb-4 shadow-sm">
                             <img class="card-img-top"
                                  src="/static/img/ramaQueenstown.png"
@@ -105,9 +113,11 @@ img {
                                 </p>
                             </div>
                         </div>
+                            </a>
                     </div>
 {#                    Albany#}
-                    <div class="col-md-4" onclick="location.href='http://www.ramadaauckland.co.nz';">
+                    <div class="col-md-4">
+                        <a href="{% url 'web:albany' %}" class="nounderline">
                         <div class="card mb-4 shadow-sm">
                             <img class="card-img-top"
                             src="/static/img/ramaAlbany.jpg"
@@ -122,9 +132,11 @@ img {
                                 </p>
                             </div>
                         </div>
+                        </a>
                     </div>
 {#                    Orewa#}
-                    <div class="col-md-4" onclick="location.href='http://www.ramadaauckland.co.nz';">
+                    <div class="col-md-4">
+                        <a href="{% url 'web:orewa' %}" class="nounderline">
                         <div class="card mb-4 shadow-sm">
                             <img class="card-img-top"
                             src="/static/img/ramaOrewa.jpg"
@@ -140,9 +152,11 @@ img {
                                 </p>
                             </div>
                         </div>
+                        </a>
                     </div>
 {#                    Taipa#}
-                    <div class="col-md-4" onclick="location.href='http://www.ramadaauckland.co.nz';">
+                    <div class="col-md-4">
+                        <a href="{% url 'web:taipa' %}" class="nounderline">
                         <div class="card mb-4 shadow-sm">
                             <img class="card-img-top"
                             src="/static/img/ramaTaipa.jpg"
@@ -159,9 +173,11 @@ img {
                                 </p>
                             </div>
                         </div>
+                        </a>
                     </div>
 {#                    Rotorua#}
-                    <div class="col-md-4" onclick="location.href='http://www.ramadaauckland.co.nz';">
+                    <div class="col-md-4">
+                        <a href="{% url 'web:rotorua' %}" class="nounderline">
                         <div class="card mb-4 shadow-sm">
                             <img class="card-img-top"
                             src="/static/img/ramaRotorua.jpg">
@@ -174,9 +190,11 @@ img {
                                 </p>
                             </div>
                         </div>
+                        </a>
                     </div>
 {#                    Wanaka#}
-                    <div class="col-md-4" onclick="location.href='http://www.ramadaauckland.co.nz';">
+                    <div class="col-md-4">
+                        <a href="{% url 'web:wanaka' %}" class="nounderline">
                         <div class="card mb-4 shadow-sm">
                             <img class="card-img-top"
                             src="/static/img/ramaWanaka.jpg">
@@ -189,6 +207,7 @@ img {
                                 </p>
                             </div>
                         </div>
+                        </a>
                     </div>
                 </div>
             </div>
