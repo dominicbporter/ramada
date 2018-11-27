@@ -26,6 +26,7 @@ def onebd_view(request):
         'page_title': page_title
     })
 
+
 def pent_view(request):
     return render(request, 'akl/pent.html', context={
         'page_title': page_title
