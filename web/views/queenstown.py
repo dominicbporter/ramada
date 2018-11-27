@@ -41,3 +41,9 @@ def loft_view(request):
     return render(request, 'qtwn/loft.html', context={
         'page_title': page_title
     })
+
+
+def tour_view(request):
+    return render(request, 'qtwn/tour.html', context={
+        'page_title': page_title
+    })

@@ -21,6 +21,7 @@ urlpatterns = [
     path('queenstown/twobedroom', queenstown.twobd_view, name='qtwn_2bd'),
     path('queenstown/threebedroom', queenstown.threebd_view, name='qtwn_3bd'),
     path('queenstown/loft', queenstown.loft_view, name='qtwn_loft'),
+    path('queenstown/tour', queenstown.tour_view, name='qtwn_tour'),
     path('rotorua/', rotorua.page_view, name='rotorua'),
     path('taipa/', taipa.page_view, name='taipa'),
     path('wanaka/', wanaka.page_view, name='wanaka'),
